@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="webfontkit/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/853f5af73b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="window-btns hidden-btns hidden">
+      <ul class="flex">
+        <li
+          id="red-btn"
+          class="window-btn red-window"
+          onclick="redClicked()"
+        ></li>
+        <li
+          id="yellow-btn"
+          class="window-btn yellow-window"
+          onclick="yellowClicked()"
+        ></li>
+      </ul>
+    </div>
+      <!--CONTENT CONTAINER-->
+      <div class="content-container">
+          <!--CONTENT HEADER-->
+          <header class="content-header">
+              <div class="window-btns">
+                  <ul class="flex">
+                    <li id="red-btn" class="window-btn" onclick="redClicked()"></li>
+                    <li id="yellow-btn" class="window-btn" onclick="yellowClicked()"></li>
+                    <li id="green-btn" class="window-btn" onclick="greenClicked()"></li>
+                  </ul>
+              </div>
+              <div class="main-header flex container">
+              <a href="index.html">
+                <h1 class="site-logo">Oscar Gelin</h1>
+              </a>
+              <!-- THEME SECTION -->
+          <ul class="themes flex header-themes">
+            <li id="default-theme" onclick="defaultTheme()"></li>
+            <li id="secondary-theme" onclick="secondaryTheme()"></li>
+            <li id="third-theme" onclick="thirdTheme()"></li>
+            <li id="fourth-theme" onclick="fourthTheme()"></li>
+          </ul>
+              <nav class="main-navbar">
+                  <ul class="flex">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="portfolio.html">My work</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+              <i class="fa-solid fa-bars" onclick="hamburgerClicked()"></i>
+            </div>
+          </header>
+          <!-- LEFT GRID CONTENT -->
+          <div class="left-grid-content">
+            <h2 class="contact-header">Contact me</h2>
+            <section class="contact-form-section">
+              <p>Send me a message and I'll get back to you as soon as possible</p>
+              <form class="form-flex contact-form" action="https://formsubmit.io/send/oscargelin@gmail.com" method="POST">
+                <input name="_redirect" type="hidden" id="name" value="https://webbkurs.ei.hv.se/~osge0002/Portfolio%202.0/emailSent.html">
+                <label for="name">Name</label>
+                <input type="text" class="small-input" id="name" name="name" placeholder="John Doe">
+                <label for="lname">Email</label>
+                <input type="email" class="small-input" id="email" name="email" placeholder="John.doe@gmail.com">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Praise">
+                <label for="message">Message</label>
+                <textarea placeholder="You rock!"></textarea>
+                <input name="_formsubmit_id" type="text" style="display:none">
+                <input type="submit" class="submit btn" id="submit" name="submit" >
+              </form>
+            </section>
+          </div>
+          <!-- RIGHT GRID CONTENT -->
+          <div class="right-grid-content">
+            <!-- CONTACT INFO SECTION-->
+            <section class="contact-info-section">
+              <h2>Contact information</h2>
+              <img
+                class="contact-pic"
+                src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.18169-9/12650786_10156513652620472_9190074580697012969_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=pONCYclermAAX8fBgh4&_nc_ht=scontent-arn2-2.xx&oh=00_AT820LrrBt8roHP3ARRW5qGIunZaAGj1SQfKJz7bUTeGKg&oe=624DAAF0"
+              />
+               <div class="contact-info">
+                 <h3>oscargelin@gmail.com</h3>
+                 <h3>0709487147</h3>
+                 <h3>Värtavägen 60</h3>
+               </div>
+            </section>
+    
+          </div>
+      </div>
+<body>
+  <script src="script.js"></script>
+</body>
+</html>

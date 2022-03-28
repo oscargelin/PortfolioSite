@@ -1,0 +1,160 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="webfontkit/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/853f5af73b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="window-btns hidden-btns hidden">
+      <ul class="flex">
+        <li
+          id="red-btn"
+          class="window-btn red-window"
+          onclick="redClicked()"
+        ></li>
+        <li
+          id="yellow-btn"
+          class="window-btn yellow-window"
+          onclick="yellowClicked()"
+        ></li>
+      </ul>
+    </div>
+    <!--CONTENT CONTAINER-->
+    <div class="content-container">
+      <!--CONTENT HEADER-->
+      <header class="content-header">
+        <!-- WINDOW BUTTONS-->
+        <div class="window-btns">
+          <ul class="flex">
+            <li id="red-btn" class="window-btn" onclick="redClicked()"></li>
+            <li
+              id="yellow-btn"
+              class="window-btn"
+              onclick="yellowClicked()"
+            ></li>
+            <li id="green-btn" class="window-btn" onclick="greenClicked()"></li>
+          </ul>
+        </div>
+
+        <!-- MAIN HEADER-->
+        <div class="main-header flex container">
+          <a href="index.html">
+            <h1 class="site-logo">Oscar Gelin</h1>
+          </a>
+          <!-- MAIN NAVBAR-->
+          <nav class="main-navbar">
+            <ul class="flex">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">My work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <i class="fa-solid fa-bars" onclick="hamburgerClicked()"></i>
+        </div>
+      </header>
+
+      <!-- LEFT GRID CONTENT -->
+      <div class="left-grid-content">
+        <!-- PROFILE SECTION -->
+        <section class="profile-section flex">
+          <img
+            class="profile-pic"
+            src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.18169-9/12650786_10156513652620472_9190074580697012969_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=pONCYclermAAX8fBgh4&_nc_ht=scontent-arn2-2.xx&oh=00_AT820LrrBt8roHP3ARRW5qGIunZaAGj1SQfKJz7bUTeGKg&oe=624DAAF0"
+          />
+          <div class="profile-info">
+            <ul class="flex">
+              <li>Oscar</li>
+              <li>Swedish</li>
+              <li>Front-end</li>
+              <li>Web dev</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- BUTTON SECTION -->
+        <section class="btn-section flex">
+          <a class="btn btn-xl portfolio-btn" href="portfolio.html"
+            >Portfolio</a
+          >
+          <a class="btn btn-xl cv-btn">Curriculum vitae</a>
+        </section>
+
+        <!-- SOCIAL MEDIA SECTION-->
+        <section class="social-media-section">
+          <div class="card social-media-card flex">
+            <h2>Github</h2>
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="card social-media-card flex">
+            <h2>Linkedin</h2>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </section>
+      </div>
+
+      <!-- RIGHT GRID CONTENT -->
+      <div class="right-grid-content">
+        <!-- THEME SECTION -->
+        <section class="theme-section">
+          <h2 class="flex theme-header">Choose site theme</h2>
+          <ul class="themes flex">
+            <li id="default-theme" onclick="defaultTheme()"></li>
+            <li id="secondary-theme" onclick="secondaryTheme()"></li>
+            <li id="third-theme" onclick="thirdTheme()"></li>
+            <li id="fourth-theme" onclick="fourthTheme()"></li>
+          </ul>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="skills-section">
+          <h2 class="skills-header flex">Skillset</h2>
+          <div class="skill-card-section">
+            <div class="skill-card card flex">
+              <h2>React</h2>
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="skill-card card flex">
+              <h2>Html</h2>
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skill-card card flex">
+              <h2>Css</h2>
+              <i class="fa-brands fa-css3"></i>
+            </div>
+            <div class="skill-card card flex">
+              <h2>Javascript</h2>
+              <i class="fa-brands fa-js-square"></i>
+            </div>
+            <div class="skill-card card flex">
+              <h2>Git</h2>
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <div class="skill-card card flex">
+              <h2>Sass</h2>
+              <i class="fa-brands fa-sass"></i>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

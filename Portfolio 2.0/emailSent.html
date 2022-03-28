@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="webfontkit/stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/853f5af73b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="window-btns hidden-btns hidden">
+      <ul class="flex">
+        <li
+          id="red-btn"
+          class="window-btn red-window"
+          onclick="redClicked()"
+        ></li>
+        <li
+          id="yellow-btn"
+          class="window-btn yellow-window"
+          onclick="yellowClicked()"
+        ></li>
+      </ul>
+    </div>
+
+      <!--CONTENT CONTAINER-->
+      <div class="content-container email-sent-container">
+          <!--CONTENT HEADER-->
+          <header class="content-header">
+              <div class="window-btns">
+                  <ul class="flex">
+                    <li id="red-btn" class="window-btn" onclick="redClicked()"></li>
+                    <li id="yellow-btn" class="window-btn" onclick="yellowClicked()"></li>
+                    <li id="green-btn" class="window-btn" onclick="greenClicked()"></li>
+                  </ul>
+              </div>
+              <div class="main-header flex container">
+              <a href="index.html">
+                <h1 class="site-logo">Oscar Gelin</h1>
+              </a>
+              <!-- THEME SECTION -->
+          <ul class="themes flex header-themes">
+            <li id="default-theme" onclick="defaultTheme()"></li>
+            <li id="secondary-theme" onclick="secondaryTheme()"></li>
+            <li id="third-theme" onclick="thirdTheme()"></li>
+            <li id="fourth-theme" onclick="fourthTheme()"></li>
+          </ul>
+              <nav class="main-navbar">
+                  <ul class="flex">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="portfolio.html">My work</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+              <i class="fa-solid fa-bars" onclick="hamburgerClicked()"></i>
+            </div>
+          </header>
+
+          <!-- LEFT GRID CONTENT -->
+          <div class="left-grid-content">
+
+
+            <div class="email-sent-box flex">
+                <h2>Message sent!</h2>
+                <i class="fa-brands fa-mailchimp"></i>
+                <h3>Thank you for getting in touch</h3>
+                <h3>I'll get back to you asap</h3>
+            </div>
+
+          </div>
+
+          <!-- RIGHT GRID CONTENT -->
+          <div class="right-grid-content">
+
+          </div>
+      </div>
+<body>
+  <script src="script.js"></script>
+</body>
+</html>
